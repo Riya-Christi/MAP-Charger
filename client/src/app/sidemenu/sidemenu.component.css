@@ -1,0 +1,16 @@
+button {
+  font-family: "Inter", sans-serif;
+}
+
+a:hover, a:focus{
+  background-color:rgb(39, 41, 168);
+}
+#sidebar{
+  background-color: rgb(44, 131, 202);
+  overflow-y: none ;
+}
+@media (min-width: 600px) {
+  #sidebar{
+    width: 247px
+  }
+}

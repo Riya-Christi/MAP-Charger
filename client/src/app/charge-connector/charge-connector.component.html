@@ -1,0 +1,358 @@
+<div class="container-fluid">
+  <h2 class="mb-2 ml-3">Charge Connectors</h2>
+    <div class="row">
+      <form class="form" [formGroup]="connectorConfig" (ngSubmit)=SaveData()>
+        <div class="row">
+         <div class="col-lg-4">
+          <div class="card">
+            <h6 class="card-header">Connector 1</h6>
+            <div class="form-group">
+              <label for="status">Status</label>
+              <input type="text" class="form-control" id="status" placeholder="NO" formControlName="C1_status"> 
+            </div>
+            <div class="form-group">
+              <label for="type">Type</label>
+              <input type="text" class="form-control" id="type" placeholder="2" formControlName="C1_type">
+            </div>
+            <div class="form-group">
+                <label for="chargerID">Charger ID</label>
+                <input type="text" class="form-control" id="chargerID" placeholder="1" formControlName="C1_id">
+            </div>
+            <div class="form-group">
+                <label for="interfaceType">Interface Type</label>
+                <input type="text" class="form-control" id="interfaceType" placeholder="1" formControlName="C1_interface">
+            </div>
+          </div>
+          </div>
+          <div class="col-lg-4">
+          <div class="card">
+            <h6 class="card-header">Connector 2</h6>
+            <div class="form-group">
+              <label for="status">Status</label>
+              <input type="text" class="form-control" id="status" placeholder="NO" formControlName="C2_status"> 
+            </div>
+            <div class="form-group">
+              <label for="type">Type</label>
+              <input type="text" class="form-control" id="type" placeholder="2" formControlName="C2_type">
+            </div>
+            <div class="form-group">
+                <label for="chargerID">Charger ID</label>
+                <input type="text" class="form-control" id="chargerID" placeholder="1" formControlName="C2_id">
+            </div>
+            <div class="form-group">
+                <label for="interfaceType">Interface Type</label>
+                <input type="text" class="form-control" id="interfaceType" placeholder="1" formControlName="C2_interface">
+            </div>
+          </div>
+          </div>
+          <div class="col-lg-4">
+          <div class="card">
+            <h6 class="card-header">Connector 3</h6>
+            <div class="form-group">
+              <label for="status">Status</label>
+              <input type="text" class="form-control" id="status" placeholder="NO" formControlName="C3_status"> 
+            </div>
+            <div class="form-group">
+              <label for="type">Type</label>
+              <input type="text" class="form-control" id="type" placeholder="2" formControlName="C3_type">
+            </div>
+            <div class="form-group">
+                <label for="chargerID">Charger ID</label>
+                <input type="text" class="form-control" id="chargerID" placeholder="1" formControlName="C3_id">
+            </div>
+            <div class="form-group">
+                <label for="interfaceType">Interface Type</label>
+                <input type="text" class="form-control" id="interfaceType" placeholder="1" formControlName="C3_interface">
+            </div>
+          </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4">
+           <div class="card">
+             <h6 class="card-header">Connector 4</h6>
+             <div class="form-group">
+               <label for="status">Status</label>
+               <input type="text" class="form-control" id="status" placeholder="NO" formControlName="C4_status"> 
+             </div>
+             <div class="form-group">
+               <label for="type">Type</label>
+               <input type="text" class="form-control" id="type" placeholder="2" formControlName="C4_type">
+             </div>
+             <div class="form-group">
+                 <label for="chargerID">Charger ID</label>
+                 <input type="text" class="form-control" id="chargerID" placeholder="1" formControlName="C4_id">
+             </div>
+             <div class="form-group">
+                 <label for="interfaceType">Interface Type</label>
+                 <input type="text" class="form-control" id="interfaceType" placeholder="1" formControlName="C4_interface">
+             </div>
+           </div>
+           </div>
+           <div class="col-lg-4">
+           <div class="card">
+             <h6 class="card-header">Connector 5</h6>
+             <div class="form-group">
+               <label for="status">Status</label>
+               <input type="text" class="form-control" id="status" placeholder="NO" formControlName="C5_status"> 
+             </div>
+             <div class="form-group">
+               <label for="type">Type</label>
+               <input type="text" class="form-control" id="type" placeholder="2" formControlName="C5_type">
+             </div>
+             <div class="form-group">
+                 <label for="chargerID">Charger ID</label>
+                 <input type="text" class="form-control" id="chargerID" placeholder="1" formControlName="C5_id">
+             </div>
+             <div class="form-group">
+                 <label for="interfaceType">Interface Type</label>
+                 <input type="text" class="form-control" id="interfaceType" placeholder="1" formControlName="C5_interface">
+             </div>
+           </div>
+           </div>
+           <div class="col-lg-4">
+           <div class="card">
+             <h6 class="card-header">Connector 6</h6>
+             <div class="form-group">
+               <label for="status">Status</label>
+               <input type="text" class="form-control" id="status" placeholder="NO" formControlName="C6_status"> 
+             </div>
+             <div class="form-group">
+               <label for="type">Type</label>
+               <input type="text" class="form-control" id="type" placeholder="2" formControlName="C6_type">
+             </div>
+             <div class="form-group">
+                 <label for="chargerID">Charger ID</label>
+                 <input type="text" class="form-control" id="chargerID" placeholder="1" formControlName="C6_id">
+             </div>
+             <div class="form-group">
+                 <label for="interfaceType">Interface Type</label>
+                 <input type="text" class="form-control" id="interfaceType" placeholder="1" formControlName="C6_interface">
+             </div>
+           </div>
+           </div>
+         </div>
+
+         <div class="row">
+          <div class="col-lg-4">
+           <div class="card">
+             <h6 class="card-header">Connector 7</h6>
+             <div class="form-group">
+               <label for="status">Status</label>
+               <input type="text" class="form-control" id="status" placeholder="NO" formControlName="C7_status"> 
+             </div>
+             <div class="form-group">
+               <label for="type">Type</label>
+               <input type="text" class="form-control" id="type" placeholder="2" formControlName="C7_type">
+             </div>
+             <div class="form-group">
+                 <label for="chargerID">Charger ID</label>
+                 <input type="text" class="form-control" id="chargerID" placeholder="1" formControlName="C7_id">
+             </div>
+             <div class="form-group">
+                 <label for="interfaceType">Interface Type</label>
+                 <input type="text" class="form-control" id="interfaceType" placeholder="1" formControlName="C7_interface">
+             </div>
+           </div>
+           </div>
+           <div class="col-lg-4">
+           <div class="card">
+             <h6 class="card-header">Connector 8</h6>
+             <div class="form-group">
+               <label for="status">Status</label>
+               <input type="text" class="form-control" id="status" placeholder="NO" formControlName="C8_status"> 
+             </div>
+             <div class="form-group">
+               <label for="type">Type</label>
+               <input type="text" class="form-control" id="type" placeholder="2" formControlName="C8_type">
+             </div>
+             <div class="form-group">
+                 <label for="chargerID">Charger ID</label>
+                 <input type="text" class="form-control" id="chargerID" placeholder="1" formControlName="C8_id">
+             </div>
+             <div class="form-group">
+                 <label for="interfaceType">Interface Type</label>
+                 <input type="text" class="form-control" id="interfaceType" placeholder="1" formControlName="C8_interface">
+             </div>
+           </div>
+           </div>
+           <div class="col-lg-4">
+           <div class="card">
+             <h6 class="card-header">Connector 9</h6>
+             <div class="form-group">
+               <label for="status">Status</label>
+               <input type="text" class="form-control" id="status" placeholder="NO" formControlName="C9_status"> 
+             </div>
+             <div class="form-group">
+               <label for="type">Type</label>
+               <input type="text" class="form-control" id="type" placeholder="2" formControlName="C9_type">
+             </div>
+             <div class="form-group">
+                 <label for="chargerID">Charger ID</label>
+                 <input type="text" class="form-control" id="chargerID" placeholder="1" formControlName="C9_id">
+             </div>
+             <div class="form-group">
+                 <label for="interfaceType">Interface Type</label>
+                 <input type="text" class="form-control" id="interfaceType" placeholder="1" formControlName="C9_interface">
+             </div>
+           </div>
+           </div>
+         </div>
+        <div class="text-center mb-5 mt-3"><button type="submit" class="btn btn-primary">Submit</button></div>
+        </form>
+
+    </div>
+</div>
+      <!-- <div class="col-md-4">
+        <div class="card">
+          <h6 class="card-header">Connector 1</h6>
+          <div class="card-body">
+            <form class="form">
+              <div class="form-group">
+                <label for="status">Status</label>
+                <input type="text" class="form-control" id="status" placeholder="NO"> 
+              </div>
+              <div class="form-group">
+                <label for="type">Type</label>
+                <input type="text" class="form-control" id="type" placeholder="2">
+              </div>
+              <div class="form-group">
+                  <label for="chargerID">Charger ID</label>
+                  <input type="text" class="form-control" id="chargerID" placeholder="1">
+              </div>
+              <div class="form-group">
+                  <label for="interfaceType">Interface Type</label>
+                  <input type="text" class="form-control" id="interfaceType" placeholder="1">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <h6 class="card-header">Connector 2</h6>
+          <div class="card-body">
+            <form class="form">
+              <div class="form-group">
+                <label for="status">Status</label>
+                <input type="text" class="form-control" id="status" placeholder="NO"> 
+              </div>
+              <div class="form-group">
+                <label for="type">Type</label>
+                <input type="text" class="form-control" id="type" placeholder="2">
+              </div>
+              <div class="form-group">
+                  <label for="chargerID">Charger ID</label>
+                  <input type="text" class="form-control" id="chargerID" placeholder="1">
+              </div>
+              <div class="form-group">
+                  <label for="interfaceType">Interface Type</label>
+                  <input type="text" class="form-control" id="interfaceType" placeholder="1">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <h6 class="card-header">Connector 3</h6>
+          <div class="card-body">
+            <form class="form">
+              <div class="form-group">
+                <label for="status">Status</label>
+                <input type="text" class="form-control" id="status" placeholder="NO"> 
+              </div>
+              <div class="form-group">
+                <label for="type">Type</label>
+                <input type="text" class="form-control" id="type" placeholder="2">
+              </div>
+              <div class="form-group">
+                  <label for="chargerID">Charger ID</label>
+                  <input type="text" class="form-control" id="chargerID" placeholder="1">
+              </div>
+              <div class="form-group">
+                  <label for="interfaceType">Interface Type</label>
+                  <input type="text" class="form-control" id="interfaceType" placeholder="1">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <h6 class="card-header">Connector 4</h6>
+          <div class="card-body">
+            <form class="form">
+              <div class="form-group">
+                <label for="status">Status</label>
+                <input type="text" class="form-control" id="status" placeholder="NO"> 
+              </div>
+              <div class="form-group">
+                <label for="type">Type</label>
+                <input type="text" class="form-control" id="type" placeholder="2">
+              </div>
+              <div class="form-group">
+                  <label for="chargerID">Charger ID</label>
+                  <input type="text" class="form-control" id="chargerID" placeholder="1">
+              </div>
+              <div class="form-group">
+                  <label for="interfaceType">Interface Type</label>
+                  <input type="text" class="form-control" id="interfaceType" placeholder="1">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <h6 class="card-header">Connector 5</h6>
+          <div class="card-body">
+            <form class="form">
+              <div class="form-group">
+                <label for="status">Status</label>
+                <input type="text" class="form-control" id="status" placeholder="NO"> 
+              </div>
+              <div class="form-group">
+                <label for="type">Type</label>
+                <input type="text" class="form-control" id="type" placeholder="2">
+              </div>
+              <div class="form-group">
+                  <label for="chargerID">Charger ID</label>
+                  <input type="text" class="form-control" id="chargerID" placeholder="1">
+              </div>
+              <div class="form-group">
+                  <label for="interfaceType">Interface Type</label>
+                  <input type="text" class="form-control" id="interfaceType" placeholder="1">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <h6 class="card-header">Connector 6</h6>
+          <div class="card-body">
+            <form class="form">
+              <div class="form-group">
+                <label for="status">Status</label>
+                <input type="text" class="form-control" id="status" placeholder="NO"> 
+              </div>
+              <div class="form-group">
+                <label for="type">Type</label>
+                <input type="text" class="form-control" id="type" placeholder="2">
+              </div>
+              <div class="form-group">
+                  <label for="chargerID">Charger ID</label>
+                  <input type="text" class="form-control" id="chargerID" placeholder="1">
+              </div>
+              <div class="form-group">
+                  <label for="interfaceType">Interface Type</label>
+                  <input type="text" class="form-control" id="interfaceType" placeholder="1">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div> -->

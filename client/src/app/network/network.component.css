@@ -1,0 +1,57 @@
+.container-fluid{
+    position: relative;
+    width: 100%;
+    padding-top: 40px;
+}
+.card-header{
+    background-color: darkgray;
+}
+h2{
+    border-bottom: 2px solid black;
+}
+.form{
+    width: 80%;
+    margin-left: 50px;
+}
+.row{
+    margin: 0px;
+}
+input{
+    width: 50%;
+}
+select{
+    width: 50%;
+}
+@media screen and (max-width: 576px) {
+    .container-fluid{
+        margin-bottom: 20px;
+    }
+    select{
+        width: 80% !important;
+    }
+    input{
+        width: 80% !important;
+    }
+    .inputCenter{
+        left: 10%;
+    }
+} 
+@media screen and (max-width: 380px) {
+    .form{
+        margin-left: 30px;
+    }
+}
+@media screen and (min-width:600px) and (max-width:1203px){
+    input{
+        width: 80% !important;
+    }
+    select{
+        width: 80% !important;
+    }
+    .inputCenter{
+        left: 10%;
+    }
+
+ }
+
+

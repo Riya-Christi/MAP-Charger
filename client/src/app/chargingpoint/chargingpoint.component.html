@@ -1,0 +1,48 @@
+<div class="container-fluid">
+  <h2 class="mb-5 ml-3">Charging Point</h2>
+    <div class="row">
+        <form class="form" [formGroup]="chargingpointConfig" (ngSubmit)=SaveData()>
+            <div class="form-group">
+              <label for="modelname">ChargePoint Modelname</label>
+              <input type="text" class="form-control" id="modelname" placeholder="En0.00" formControlName="cp_modelname">
+            </div>
+            <div class="form-group">
+              <label for="_srno.">ChargePoint Serial No.</label>
+              <input type="text" class="form-control" id="cp_srnumber" placeholder="Enter _srno." formControlName="cp_srnumber">
+            </div>
+            <div class="form-group">
+                <label for="cp_vendor">ChargePoint Vendor</label>
+                <input type="text" class="form-control" id="cp_vendor" placeholder="Enter _vendor" formControlName="cp_vendor">
+              </div>
+              <div class="form-group row">
+                <div class="col-md-6">
+                  <label for="cp_lat">Latitide</label>
+                <input type="number" class="form-control" id="cp_lat" placeholder="1111111" formControlName="cp_lat">
+                </div>
+                <div class="col-md-6">
+                  <label for="cp_long">Longitude</label>
+                  <input type="number" class="form-control" id="cp_long" placeholder="2222222" formControlName="cp_long">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="cp_fwver">Firmware Version</label>
+                <input type="text" class="form-control" id="cp_fwver" placeholder="v1.0" formControlName="cp_fwver">
+              </div>
+              <div class="form-group">
+                <label for="cp_url">URL</label>
+                <input type="text" class="form-control" id="cp_url" placeholder="Enter URL" formControlName="cp_url">
+              </div>
+              <div class="form-group">
+                <label for="max-connector">Max Connector</label>
+                <input type="number" class="form-control" id="max-connector" placeholder="" formControlName="cp_connector">
+              </div>
+              <div class="form-group">
+                <label for="cp_rfid">RFID</label>
+                <input type="text" class="form-control" id="cp_rfid" placeholder="" formControlName="cp_rfid">
+              </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</div>
+
+

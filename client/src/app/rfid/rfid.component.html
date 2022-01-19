@@ -1,0 +1,30 @@
+ <div class="container-fluid">
+  <h2 class="mb-5 ml-3">RFID Configuration</h2>
+    <div class="row">
+      <form class="form" [formGroup]= "rfidConfig" (ngSubmit)="SaveData()">
+          <div class="form-group">
+            <label for="rfidTag1">RFID Tag 1</label>
+            <input type="text" class="form-control" id="rfidTag1" placeholder="" formControlName="tag1">
+          </div>
+          <div class="form-group">
+            <label for="rfidTag2">RFID Tag 2</label>
+            <input type="text" class="form-control" id="rfidTag2" placeholder="" formControlName="tag2">
+          </div>
+          <div class="form-group">
+            <label for="rfidTag3">RFID Tag 3</label>
+            <input type="text" class="form-control" id="rfidTag3" placeholder="" formControlName="tag3">
+          </div>
+          <div class="form-group">
+            <label for="rfidTag4">RFID Tag 4</label>
+            <input type="text" class="form-control" id="rfidTag4" placeholder="" formControlName="tag4">
+          </div>
+          <div class="form-group">
+            <label for="rfidTag5">RFID Tag 5</label>
+            <input type="text" class="form-control" id="rfidTag5" placeholder="" formControlName="tag5">
+          </div>
+          <div class="d-flex justify-content-center">
+            <button type="submit" class="btn btn-primary mt-2">Submit</button>
+          </div>   
+        </form>
+    </div>
+</div>

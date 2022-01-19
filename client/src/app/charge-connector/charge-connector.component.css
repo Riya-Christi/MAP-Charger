@@ -1,0 +1,52 @@
+.container-fluid{
+    position: relative;
+    width: auto;
+    padding-top: 40px;
+    height: 100%;
+}
+.row{
+    margin: 0px;
+    margin-left: 20px;
+}
+h2{
+    border-bottom: 2px solid black;
+}
+input{
+    height: 33px;
+}
+label{
+    margin-bottom: 3px;
+}
+.form-group{
+    margin: 10px;
+}
+.card-header{
+    background-color: darkgray;
+}
+.card{
+    margin-top: 30px;
+}
+@media screen and (min-width: 1200px) {
+    .card{
+        /* width: 300px; */
+        margin-right: 40px;
+     } 
+} 
+@media screen and (max-width: 767px) {
+    .card{
+        margin-top: 20px;
+     }
+     .row{
+        margin-left: 0px;
+    } 
+}
+@media screen and (max-width: 600px) {
+    h2{
+        margin-bottom: 10px !important;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .container-fluid{
+        padding-right: 60px;
+    }
+}

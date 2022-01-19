@@ -1,0 +1,41 @@
+.container-fluid{
+   top: 0;
+   bottom: 0;
+   right: 0;
+   left: 0;
+   position: fixed;
+   overflow: auto;
+   padding: 0px;
+}
+.header{
+   background-color: rgb(248, 128, 59);
+   box-shadow: inset 0px 0px 10px rgba(0,0,0,0.5);
+}
+.wrapper{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+}
+@media screen and (min-width: 600px) {
+    .wrapper {
+      height: 100%;
+    }
+    #sidemenu { 
+       width: 247px;
+       float: left;
+       /* height: 100vh; */
+       height: 400px;
+       background-color: rgb(226, 225, 225);
+       overflow: auto;
+      }
+    #content {
+      margin-left: 250px;
+      border-left: 2px solid black;
+      /* height: 100vh;  */
+      padding-left: 20px;
+   }
+ }
+
