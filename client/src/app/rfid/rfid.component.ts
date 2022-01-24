@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
+import { Socket } from 'socket.io-client';
 import { ConfigService } from '../config.service';
 
 @Component({

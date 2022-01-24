@@ -6,8 +6,13 @@ const socketIo = require('socket.io');
 var cors = require('cors')
 app.use(cors())
 
-app.get('/', function (req, res) {
-  res.send("hello world");
+// app.get('/', function (req, res) {
+//   res.send("hello world");
+// });
+
+app.use(express.static(__dirname + '/dist/client'))
+app.use('/*', function(req,res){
+  res.sendFile(path.join(__dirname + '/dist/client/index.html'));
 });
 
 const http = require('http');
@@ -16,9 +21,9 @@ const server = http.createServer(app);
 const io = socketIo(server);
 // const socket = require('./socket')(io);
 
-const port = 3000;
+const port = process.env.PORT || 3000;
 // process.env.PORT for production
-server.listen(port, () => console.log('server started on ' + port));
+server.listen(port, () => console.log('server started on port ' + `${port}`));
 
 const wss = new ws.Server({ server });
 
@@ -33,3 +38,9 @@ wss.on('connection', (ws) => {
   }); 
   
 });
+// io.on('connection',function(socket){
+//   console.log("new user connected");
+// });
+// server.listen(3000,() =>{
+//   console.log("socet.io listenening to prt 3000");
+// })
