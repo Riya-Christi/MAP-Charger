@@ -39,26 +39,26 @@ export class ConfigService {
 
   constructor(private http: HttpClient) { }
   getRfidConfigData(){
-    // console.log("get", this.fmdata[0]);
-    // let url= 'http://localhost:3000'
-    return this.fmdata;
+    let url= 'http://localhost:3000/rfid'
+    return this.http.get(url);
+    // return this.fmdata;
 
   }
 
   getNetworkConfigData(){
-    // let url='';
-    // return this.http.get(this.NetworkURL);
-    return this.fmdata;
+    let url= 'http://localhost:3000/network'
+    return this.http.get(url);
+    // return this.fmdata;
   }
 
   getChargingpointData(){
-    return this.fmdata;
-    // return this.http.get(this.ChargingpointURL);
+    // return this.fmdata;
+    return this.http.get(this.ChargingpointURL);
   }
 
   getConnectorData(){
-    return this.fmdata;
-    // return this.http.get(this.ConnectorURL);
+    // return this.fmdata;
+    return this.http.get(this.ConnectorURL);
   }
 
   // saveRfidConfigData(data: { value: any; }){

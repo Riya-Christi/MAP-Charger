@@ -11,16 +11,17 @@ export class NetworkComponent implements OnInit {
   configData: any;
 
   constructor( private config: ConfigService) {
-
-    var configData = this.config.getNetworkConfigData();
-    // this.rfidConfig.patchValue({
-    //       tag1: this.configData?.tag1,
-    //       tag2: this.configData?.tag2,
-    //       tag3: this.configData?.tag3,ss
-    //       tag4: this.configData?.tag4,
-    //       tag5: this.configData?.tag5,
-    //     })
-    console.log("get data", configData[1]);
+    this.config.getNetworkConfigData().subscribe((data: any)=>{
+      this.configData = data;
+      console.log("data" ,this.configData);
+      this.networkConfig.patchValue({
+        i_type: this.configData?.i_type,
+        ssid: this.configData?.ssid
+      })
+      console.log(this.configData);
+    })
+    // var configData = this.config.getNetworkConfigData();
+    // console.log("get data", configData[1]);
   }  
 
   networkConfig = new FormGroup({

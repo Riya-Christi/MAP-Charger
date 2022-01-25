@@ -10,7 +10,7 @@ const routes: Routes = [
   { path: 'rfid', component: RfidComponent},
   { path: 'network', component: NetworkComponent},
   { path: 'chargingpoint', component: ChargingpointComponent},
-  { path: 'chargeconnector', component: ChargeConnectorComponent}
+  { path: 'chargconnector', component: ChargeConnectorComponent}
 ];
 
 @NgModule({
