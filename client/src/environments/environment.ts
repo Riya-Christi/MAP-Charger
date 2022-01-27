@@ -4,10 +4,10 @@
 
 export const environment = {
   production: false,
-  RfidUrl: 'http://localhost:3000/rfid',
-  NetworkUrl: 'http://localhost:3000/network',
-  ChargingpointUrl: 'http://localhost:3000/chargingpoint',
-  ConnectorUrl:'http://localhost:3000/chargconnector',  
+  RfidUrl: 'ws://hitachi-ups.local:80/ws/rfid',
+  NetworkUrl: 'ws://hitachi-ups.local:80/ws/network',
+  ChargingpointUrl: 'ws://hitachi-ups.local:80/ws/chargingpoint',
+  ConnectorUrl:'ws://hitachi-ups.local:80/ws/chargconnector'  
 };
 
 /*

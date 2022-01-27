@@ -16,7 +16,7 @@ export class ConfigService {
 
 
   public openWebSocket(){
-    this.webSocket = new WebSocket('ws://localhost:3000');
+    this.webSocket = new WebSocket('ws://hitachi-ups.local:80/ws');
     this.webSocket.onopen = (event: any) => {
       console.log("open: ", event);
     };
@@ -62,18 +62,4 @@ export class ConfigService {
   //   return this.http.post(this.RfidURL, data); 
   // }
 
-  // saveNetworkConfigData(data: any){
-  //   console.log(data);
-  //   return this.http.post(this.NetworkURL, data); 
-  // }
-
-  // saveChargingpointData(data: any){
-  //   console.log(data);
-  //   return this.http.post(this.ChargingpointURL, data); 
-  // }
-
-  // saveConnectorConfigData(data: any){
-  //   console.log(data);
-  //   return this.http.post(this.ConnectorURL, data); 
-  // }
 }
