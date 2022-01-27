@@ -11,7 +11,7 @@ export class ConfigService {
   NetworkURL = environment. NetworkUrl;
   ChargingpointURL = environment.ChargingpointUrl;
   ConnectorURL = environment.ConnectorUrl;
-  webSocket: any;
+  webSocket!: WebSocket;
   fmdata: any[] = [];
 
 
@@ -23,7 +23,7 @@ export class ConfigService {
     this.webSocket.onmessage = (event: any)=>{
       const data = JSON.parse(event.data);
       // console.log("on message data", event.data);
-     
+      // this.fmdata.length = 0;
       this.fmdata.push(data);
       console.log("frmdata", this.fmdata)
     }
@@ -34,31 +34,27 @@ export class ConfigService {
     this.webSocket.send(JSON.stringify(data));
     // this.webSocket.send('rfid',JSON.stringify(data))
     console.log(JSON.stringify(data));
-    
   }
 
   constructor(private http: HttpClient) { }
   getRfidConfigData(){
-    let url= 'http://localhost:3000/rfid'
-    return this.http.get(url);
-    // return this.fmdata;
+    return this.fmdata;
 
   }
 
   getNetworkConfigData(){
-    let url= 'http://localhost:3000/network'
-    return this.http.get(url);
-    // return this.fmdata;
+    // return this.http.get(this.NetworkURL);
+    return this.fmdata;
   }
 
   getChargingpointData(){
-    // return this.fmdata;
-    return this.http.get(this.ChargingpointURL);
+    return this.fmdata;
+    // return this.http.get(this.ChargingpointURL);
   }
 
   getConnectorData(){
-    // return this.fmdata;
-    return this.http.get(this.ConnectorURL);
+    return this.fmdata;
+    // return this.http.get(this.ConnectorURL);
   }
 
   // saveRfidConfigData(data: { value: any; }){

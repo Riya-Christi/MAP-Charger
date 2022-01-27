@@ -12,21 +12,32 @@ export class RfidComponent implements OnInit {
 
   constructor( private config: ConfigService) { 
    
-    this.config.getRfidConfigData().subscribe((data: any)=>{
-      this.configData = data;
-      console.log("data" ,this.configData);
-      this.rfidConfig.patchValue({
-        tag1: this.configData[this.configData.length-1]?.tag1,
-        tag2: this.configData?.tag2,
-        tag3: this.configData?.tag3,
-        tag4: this.configData?.tag4,
-        tag5: this.configData?.tag5,
-      })
-      console.log(this.configData);
-    })
-    // var configData = this.config.getRfidConfigData();
-    // console.log("get data", configData[0]);
+    // this.config.getRfidConfigData().subscribe((data : any)=>{
+    //   console.log("rfid data", data);
+    //   // this.configData = data;
+    //   this.configData = JSON.stringify(data);
+    //   console.log("data" ,this.configData);
+    //   this.rfidConfig.patchValue({
+    //     tag1: this.configData?.tag1,
+    //     tag2: this.configData?.tag2,
+    //     tag3: this.configData?.tag3,
+    //     tag4: this.configData?.tag4,
+    //     tag5: this.configData?.tag5,
+    //   })
+    //   console.log(this.configData);
+    // })
+    var data = this.config.getRfidConfigData();
+    this.configData = data[0];
+    console.log("tag 1", this.configData?.tag1);
     
+    this.rfidConfig.patchValue({
+          tag1: this.configData?.tag1,
+          tag2: this.configData?.tag2,
+          tag3: this.configData?.tag3,
+          tag4: this.configData?.tag4,
+          tag5: this.configData?.tag5,
+        })
+    console.log("get data", this.configData);
   }
 
   rfidConfig = new FormGroup({
@@ -42,6 +53,7 @@ export class RfidComponent implements OnInit {
       this.config.openWebSocket();
     }
   }
+
   SaveData(){
   console.log(this.rfidConfig.value);
   this.config.sendData(this.rfidConfig.value)
